@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Resources\Scripts\ConstructBoundary.js" />
+     <None Include="Assets\Resources\Scripts\MAP2.txt" />
      <None Include="Assets\Resources\Scripts\MAP.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>

@@ -50,6 +50,7 @@
      <Compile Include="Assets\Resources\Scripts\enemyManager.cs" />
      <Compile Include="Assets\Resources\Scripts\inital.cs" />
      <Compile Include="Assets\Resources\Scripts\playerTileInteraction.cs" />
+     <None Include="Assets\Resources\Scripts\MAP2.txt" />
      <None Include="Assets\Resources\Scripts\MAP.txt" />
   </ItemGroup>
   <ItemGroup>
