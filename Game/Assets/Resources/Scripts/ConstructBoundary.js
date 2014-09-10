@@ -18,17 +18,17 @@ function Awake () {
         var i_off = map[j].length / 20.0;
         for (var i = 0; i < map[j].length; i ++) {
             if (map[j][i] == "X") {
-                Instantiate (wallPrefab, new Vector3(i*4, y, j*4), Quaternion.identity);
+                Instantiate (wallPrefab, new Vector3(j*4, y, i*4), Quaternion.identity);
             }
             
             if(white == true)	{
-            	Instantiate (whiteTile, new Vector3(i*4, 0, j*4), Quaternion.identity);
+            	Instantiate (whiteTile, new Vector3(j*4, 0, i*4), Quaternion.identity);
             	white = false;
             	if(i == map[j].Length - 1)
             		white = true;
             }
             else	{
-            	Instantiate (blackTile, new Vector3(i*4, 0, j*4), Quaternion.identity);
+            	Instantiate (blackTile, new Vector3(j*4, 0, i*4), Quaternion.identity);
             	white = true;
             	if(i == map[j].Length - 1)
             		white = false;
