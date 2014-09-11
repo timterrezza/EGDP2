@@ -1,9 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\DogMove.cs">
+
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\MAP2.txt">
     <Files>
-      <File FileName="Assets\Resources\Scripts\enemyManager.cs" Line="15" Column="46" />
-      <File FileName="Assets\DogMove.cs" Line="29" Column="32" />
+      <File FileName="Assets\Resources\Scripts\ConstructBoundary.js" Line="31" Column="61" />
+      <File FileName="Assets\Resources\Scripts\MAP.txt" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\MAP2.txt" Line="8" Column="9" />
+
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
