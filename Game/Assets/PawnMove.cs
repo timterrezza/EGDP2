@@ -29,19 +29,21 @@ public class PawnMove : MonoBehaviour {
 		transform.position = Vector3.MoveTowards(transform.position, target, step);
 		test = new Vector3(transform.position.x - point[curr].x, transform.position.y - point[curr].y,transform.position.z - point[curr].z);
 		if(test.x == 0 && test.z == 0){
-			curr++;
+
 			if(Turnp[curr] == 0){
-				transform.Rotate(Vector3.right * Time.deltaTime);
+				transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
+
 			}
 			if(Turnp[curr] == 1){
-				transform.Rotate(Vector3.right * Time.deltaTime);
+				transform.rotation = Quaternion.Euler(new Vector3(0,90,0));
 			}
 			if(Turnp[curr] == 2){
-				transform.Rotate(Vector3.right * Time.deltaTime);
+				transform.rotation = Quaternion.Euler(new Vector3(0,180,0));
 			}
 			if(Turnp[curr] == 3){
-				transform.Rotate(Vector3.right * Time.deltaTime);
+				transform.rotation = Quaternion.Euler(new Vector3(0,270,0));
 			}
+			curr++;
 			//transform.rotation = Quaternion.Lerp(transform.rotation, newrot, Time.time * speed);
 			if(curr >= point.GetLength(0)){
 				curr = 0;
