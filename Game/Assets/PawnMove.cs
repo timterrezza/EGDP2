@@ -14,6 +14,7 @@ public class PawnMove : MonoBehaviour {
 	private int extra = 0;
 	public int runs;
 	private Quaternion qr;
+	public bool ismoving = false;
 	// Use this for initialization
 	void Start () {
 		extra = runs;
@@ -30,6 +31,9 @@ public class PawnMove : MonoBehaviour {
 		transform.rotation = Quaternion.Lerp(transform.rotation,qr,Time.deltaTime*turnspeed);
 		transform.position = Vector3.MoveTowards(transform.position, target, step);
 		test = new Vector3(transform.position.x - point[curr].x, transform.position.y - point[curr].y,transform.position.z - point[curr].z);
+		if(transform.position == target){
+			ismoving = false;
+		}
 		if(test.x == 0 && test.z == 0){
 
 			if(Turnp[curr] == 0){
@@ -57,6 +61,7 @@ public class PawnMove : MonoBehaviour {
 	}
 	public void Calc(){
 		test = new Vector3(transform.position.x - point[curr].x, transform.position.y - point[curr].y,transform.position.z - point[curr].z);
+		ismoving = true;
 		if(test.x >= 1){
 			MoveD();
 		}else

@@ -14,6 +14,7 @@ public class DogMove : MonoBehaviour {
 	private int extra = 0;
 	public int runs;
 	private Quaternion qr;
+	public bool ismoving = false;
 	// Use this for initialization
 	void Start () {
 		extra = runs;
@@ -28,7 +29,13 @@ public class DogMove : MonoBehaviour {
 
 		float step = speed * Time.deltaTime;
 		transform.rotation = Quaternion.Lerp(transform.rotation,qr,Time.deltaTime*turnspeed);
+		if(transform.position == target){
+			ismoving = false;
+		}
+
 		transform.position = Vector3.MoveTowards(transform.position, target, step);
+		
+
 		test = new Vector3(transform.position.x - point[curr].x, transform.position.y - point[curr].y,transform.position.z - point[curr].z);
 		if(test.x == 0 && test.z == 0){
 			if(Turnp[curr] == 0){
@@ -56,6 +63,7 @@ public class DogMove : MonoBehaviour {
 	}
 	public void Calc(){
 		test = new Vector3(transform.position.x - point[curr].x, transform.position.y - point[curr].y,transform.position.z - point[curr].z);
+		ismoving = true;
 		if(test.x >= 1){
 			MoveD();
 		}else
