@@ -6,6 +6,8 @@ public class enemyManager : MonoBehaviour {
 	public GameObject[] Baddies;
 	public GameObject[] Pawnies;
 	public int dogm;
+	
+	private bool canMove = true;
 	// Use this for initialization
 	void Start () {
 		enemies = GameObject.FindGameObjectsWithTag("enemy");
@@ -32,9 +34,25 @@ public class enemyManager : MonoBehaviour {
 
 
 	}
-	
+		
 	// Update is called once per frame
 	void Update () {
+//		enemies = GameObject.FindGameObjectsWithTag("enemy");
+//		Baddies = GameObject.FindGameObjectsWithTag("Dog");
+//		Pawnies = GameObject.FindGameObjectsWithTag("Pawn");
+//		
+//		for (int i = 0; i < enemies.Length; i++) {
+//			
+//		}
+//		for (int i = 0; i < Baddies.Length; i++) {
+//			
+//		}
+//		for (int i = 0; i < Pawnies.Length; i++) {
+//			if (Pawnies[i].GetComponent<PawnMove>().ismoving == true) 
+//			canMove = false;
+//		}
+//		
+//		if (canMove == false) GameObject.Find ("First Person Controller")
 	
 	}
 }
