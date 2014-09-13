@@ -55,6 +55,7 @@
      <Compile Include="Assets\Resources\Scripts\thirdPersonMovement.cs" />
      <None Include="Assets\Resources\Scripts\MAP2.txt" />
      <None Include="Assets\Resources\Scripts\MAP3.txt" />
+     <None Include="Assets\Resources\Scripts\MAP4.txt" />
      <None Include="Assets\Resources\Scripts\MAP.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
