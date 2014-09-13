@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class PawnMove : MonoBehaviour {
 	public float speed = 9;
+	public float turnspeed = 5;
 	Vector3 target;
 	public int movement = 3;
 	private int curr = 1;
@@ -12,11 +13,12 @@ public class PawnMove : MonoBehaviour {
 	private Vector3 test;
 	private int extra = 0;
 	public int runs;
-	private Quaternion newrot;
+	private Quaternion qr;
 	// Use this for initialization
 	void Start () {
 		extra = runs;
 		target = new Vector3(transform.position.x,transform.position.y,transform.position.z);
+		qr = transform.rotation;
 	}
 	
 	// Update is called once per frame
@@ -25,24 +27,25 @@ public class PawnMove : MonoBehaviour {
 		
 		
 		float step = speed * Time.deltaTime;
-		
+		transform.rotation = Quaternion.Lerp(transform.rotation,qr,Time.deltaTime*turnspeed);
 		transform.position = Vector3.MoveTowards(transform.position, target, step);
 		test = new Vector3(transform.position.x - point[curr].x, transform.position.y - point[curr].y,transform.position.z - point[curr].z);
 		if(test.x == 0 && test.z == 0){
 
 			if(Turnp[curr] == 0){
-				transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
-
+				qr = Quaternion.Euler(new Vector3(0,0,0));
 			}
 			if(Turnp[curr] == 1){
-				transform.rotation = Quaternion.Euler(new Vector3(0,90,0));
+				qr = Quaternion.Euler(new Vector3(0,90,0));
 			}
 			if(Turnp[curr] == 2){
-				transform.rotation = Quaternion.Euler(new Vector3(0,180,0));
+				qr = Quaternion.Euler(new Vector3(0,180,0));
 			}
 			if(Turnp[curr] == 3){
-				transform.rotation = Quaternion.Euler(new Vector3(0,270,0));
+				qr = Quaternion.Euler(new Vector3(0,270,0));
 			}
+
+
 			curr++;
 			//transform.rotation = Quaternion.Lerp(transform.rotation, newrot, Time.time * speed);
 			if(curr >= point.GetLength(0)){
