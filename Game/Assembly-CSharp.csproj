@@ -56,6 +56,7 @@
      <Compile Include="Assets\Resources\Scripts\thirdPersonMovement.cs" />
      <Compile Include="Assets\Resources\Scripts\tileManager.cs" />
      <Compile Include="Assets\Resources\Scripts\tileRotation.cs" />
+     <None Include="Assets\Resources\Scripts\Beginner.txt" />
      <None Include="Assets\Resources\Scripts\MAP2.txt" />
      <None Include="Assets\Resources\Scripts\MAP5.txt" />
      <None Include="Assets\Resources\Scripts\MAP3.txt" />
