@@ -36,7 +36,7 @@ public class PawnMove : MonoBehaviour {
 		}
 
 		if(test.x == 0 && test.z == 0){
-			/*
+
 			if(Turnp[curr] == 0){
 				qr = Quaternion.Euler(new Vector3(0,0,0));
 			}
@@ -49,21 +49,12 @@ public class PawnMove : MonoBehaviour {
 			if(Turnp[curr] == 3){
 				qr = Quaternion.Euler(new Vector3(0,270,0));
 			}
-			*/
+
 
 			curr++;
 			//transform.rotation = Quaternion.Lerp(transform.rotation, newrot, Time.time * speed);
 			if(curr >= point.GetLength(0)){
 				curr = 0;
-				if(qr == Quaternion.Euler(new Vector3(0, 0, 0))
-					qr = Quaternion.Euler(new Vector3(0,180,0));
-				else if(qr == Quaternion.Euler(new Vector3(0,90, 0))
-					qr = Quaternion.Euler(new Vector3(0,270,0));
-				else if(qr == Quaternion.Euler(new Vector3(0, 180, 0))
-					qr = Quaternion.Euler(new Vector3(0,0,0));
-				else if(qr == Quaternion.Euler(new Vector3(0,270, 0))
-					qr = Quaternion.Euler(new Vector3(0,90,0));
-
 			}
 		}
 
