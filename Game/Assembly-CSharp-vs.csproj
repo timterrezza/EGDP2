@@ -62,7 +62,11 @@
      <None Include="Assets\Resources\Scripts\MAP4.txt" />
      <None Include="Assets\Resources\Scripts\MAP.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
+<<<<<<< HEAD
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+=======
+ <HintPath>C:/Users/Tim/Documents/EGDP2/Game/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+>>>>>>> 6489df6df2aafcf39ff0d337ab3e0683ed8ae05b
  </Reference>
   </ItemGroup>
   <ItemGroup>
