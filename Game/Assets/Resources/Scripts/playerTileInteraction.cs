@@ -3,8 +3,13 @@ using System.Collections;
 
 public class playerTileInteraction : MonoBehaviour {
 	GameObject enemyManager;
+<<<<<<< HEAD
 	GameObject tileManager;
 	// Use this for initialization
+=======
+
+
+>>>>>>> b06860bae1e2cf3fdceae8036ebd08395b850919
 	void Start () {
 		enemyManager = GameObject.Find ("Enemy Manager");
 		tileManager = GameObject.Find ("Tile Manager");
