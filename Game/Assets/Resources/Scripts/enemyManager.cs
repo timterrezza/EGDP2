@@ -6,6 +6,7 @@ public class enemyManager : MonoBehaviour {
 	public GameObject[] Baddies;
 	public GameObject[] Pawnies;
 	public int dogm;
+
 	public float derp;
 
 	private CharacterMotor jsScript;
@@ -38,17 +39,17 @@ public class enemyManager : MonoBehaviour {
 	}
 	
 	void Update () {
-		CharacterMotor code = GameObject.Find ("First Person Controller").GetComponent<CharacterMotor>();
+		//CharacterMotor code = GameObject.Find ("First Person Controller").GetComponent<CharacterMotor>();
 
 		enemies = GameObject.FindGameObjectsWithTag("enemy");
 		Baddies = GameObject.FindGameObjectsWithTag("Dog");
 		Pawnies = GameObject.FindGameObjectsWithTag("Pawn");
 
-		if(canMove == false)	{
+		/*if(canMove == false)	{
 			code.canControl = false;
 		}
 		else
-			code.canControl = true;
+			code.canControl = true;*/
 
 		if(Time.time > derp + 1.5f)	{
 			canMove = true;
