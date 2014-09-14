@@ -1,9 +1,18 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\thirdPersonMovement.cs">
     <Files>
       <File FileName="Assets\Resources\Scripts\enemyManager.cs" Line="54" Column="21" />
       <File FileName="Assets\Resources\Scripts\thirdPersonMovement.cs" Line="43" Column="39" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\playerTileInteraction.cs">
+    <Files>
+      <File FileName="Assets\Resources\Scripts\playerTileInteraction.cs" Line="27" Column="2" />
+      <File FileName="Assets\Resources\Scripts\enemyManager.cs" Line="29" Column="26" />
+      <File FileName="Assets\Resources\Scripts\PawnMove.cs" Line="10" Column="22" />
+>>>>>>> d0eb2625441307e3150cbf8f72e61f2e501aa5b7
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

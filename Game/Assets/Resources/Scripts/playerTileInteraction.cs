@@ -5,6 +5,7 @@ public class playerTileInteraction : MonoBehaviour {
 	GameObject enemyManager;
 	GameObject tileManager;
 	// Use this for initialization
+
 	void Start () {
 		enemyManager = GameObject.Find ("Enemy Manager");
 		tileManager = GameObject.Find ("Tile Manager");
