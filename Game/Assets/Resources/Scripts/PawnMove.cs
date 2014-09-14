@@ -34,6 +34,7 @@ public class PawnMove : MonoBehaviour {
 		if(transform.position == target){
 			ismoving = false;
 		}
+
 		if(test.x == 0 && test.z == 0){
 
 			if(Turnp[curr] == 0){

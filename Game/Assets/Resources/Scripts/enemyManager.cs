@@ -33,8 +33,8 @@ public class enemyManager : MonoBehaviour {
 		for (int i = 0; i < Pawnies.Length; i++) {
 			
 			Pawnies[i].gameObject.GetComponent<PawnMove>().Calc();
-
 		}
+
 	}
 	
 	void Update () {
