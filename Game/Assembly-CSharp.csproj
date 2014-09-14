@@ -46,10 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DogMove.cs" />
+     <Compile Include="Assets\Resources\Scripts\GUIManager.cs" />
      <Compile Include="Assets\Resources\Scripts\enemyManager.cs" />
      <Compile Include="Assets\Resources\Scripts\inital.cs" />
      <Compile Include="Assets\Resources\Scripts\playerTileInteraction.cs" />
      <Compile Include="Assets\Resources\Scripts\thirdPersonMovement.cs" />
+     <Compile Include="Assets\Resources\Scripts\tileManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\tileRotation.cs" />
+     <None Include="Assets\Resources\Scripts\MAP2.txt" />
      <None Include="Assets\Resources\Scripts\MAP.txt" />
   </ItemGroup>
   <ItemGroup>

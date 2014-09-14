@@ -35,7 +35,9 @@ public class thirdPersonMovement : MonoBehaviour {
 
 	bool initialPhase;
 
-	bool AIMovement;
+	bool isLerping;
+
+	int lerpIndex;
 
 	void Start() {
 		startButton = GameObject.Find ("Start").guiTexture;
@@ -52,7 +54,8 @@ public class thirdPersonMovement : MonoBehaviour {
 		markers[7] = middle2;
 		markers[8] = middle3;
 		initialPhase = true;
-		AIMovement = true;
+
+		isLerping = false;
 	}
 
 	void setEndMarker(string input) {
@@ -97,6 +100,9 @@ public class thirdPersonMovement : MonoBehaviour {
 				if (Input.GetMouseButtonDown(0)) {
 					transform.position = beginningMarker.position;
 					currentMarker = beginningMarker;
+					setEndMarker(inputString[0]);
+					startTime = Time.time;
+					lerpIndex = 0;
 					initialPhase = false;
 				}
 			}
@@ -143,21 +149,28 @@ public class thirdPersonMovement : MonoBehaviour {
 			}
 		}
 		else {
-			for (int i = 0; i < inputString.Count; i++) {
-				Debug.Log ("here");
-				AIMovement = true;
-				setEndMarker(inputString[i]);
-				startTime = Time.time;
-				while (AIMovement) {
-					distCovered = (Time.time - startTime);
-					fracJourney = distCovered / 4;
-					transform.position = Vector3.Lerp(startMarker.position, endMarker.position, fracJourney);
-					if (transform.position.x == endMarker.position.x && transform.position.z == endMarker.position.z) {
-						AIMovement = false;
-						currentMarker = endMarker;
-					}
+			if (isLerping) {
+				distCovered = (Time.time - startTime);
+				fracJourney = distCovered / 4;
+				transform.position = Vector3.Lerp(startMarker.position, endMarker.position, fracJourney);
+				if (transform.position.x == endMarker.position.x && transform.position.z == endMarker.position.z) {
+					currentMarker = endMarker;
+					isLerping = false;
+					lerpIndex += 1;
 				}
 			}
+			if (!isLerping) {
+				if (lerpIndex == inputString.Count) {
+					initialPhase = true;
+				}
+				else {
+					transform.position = endMarker.position;
+					setEndMarker(inputString[lerpIndex]);
+					startTime = Time.time;
+					isLerping = true;
+				}
+			}
+
 		}
 	}
 }
