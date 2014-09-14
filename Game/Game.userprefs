@@ -1,4 +1,5 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\KingMe.cs">
     <Files>
@@ -6,6 +7,15 @@
       <File FileName="Assets\Resources\Scripts\DogMove.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\enemyManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\KingMe.cs" Line="17" Column="28" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\tileManager.cs">
+    <Files>
+      <File FileName="Assets\Resources\Scripts\thirdPersonMovement.cs" Line="168" Column="60" />
+      <File FileName="Assets\Resources\Scripts\enemyManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\ConstructBoundary.js" Line="21" Column="89" />
+      <File FileName="Assets\Resources\Scripts\tileManager.cs" Line="23" Column="2" />
+>>>>>>> b14790d6b8c9196a8aeed300178b95f2c0ffe4fe
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

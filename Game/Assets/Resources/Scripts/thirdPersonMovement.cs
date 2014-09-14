@@ -26,6 +26,7 @@ public class thirdPersonMovement : MonoBehaviour {
 	List<string> inputString;
 
 	GameObject enemyManager;
+	GameObject tileManager;
 
 	bool bumpedIntoWall;
 
@@ -56,6 +57,7 @@ public class thirdPersonMovement : MonoBehaviour {
 		currentMarker = initialTarget.transform;
 
 		enemyManager = GameObject.Find("Enemy Manager");
+		tileManager = GameObject.Find ("Tile Manager");
 	}
 
 	void setEndMarker(string input) {
@@ -163,6 +165,7 @@ public class thirdPersonMovement : MonoBehaviour {
 				currentMarker = endMarker;
 				if (bumpedIntoWall == false) {
 					enemyManager.GetComponent<enemyManager>().stepEnemies();
+					tileManager.GetComponent<tileManager>().rotateTiles();
 				}
 				else {
 					bumpedIntoWall = false;
