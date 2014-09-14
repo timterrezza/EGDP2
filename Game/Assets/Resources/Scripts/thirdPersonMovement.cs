@@ -27,13 +27,17 @@ public class thirdPersonMovement : MonoBehaviour {
 
 	GameObject enemyManager;
 
+	bool bumpedIntoWall;
+
 	void OnTriggerEnter(Collider c) {
 		if (c.gameObject.tag == "wall") {
 			endMarker = currentMarker;
+			bumpedIntoWall = true;
 		}
 	}
 
 	void Start() {
+		bumpedIntoWall = false;
 
 		canInput = true;
 
@@ -86,7 +90,6 @@ public class thirdPersonMovement : MonoBehaviour {
 	void Update() {
 		if (canInput) {
 			if(Input.GetKeyDown(KeyCode.W)){
-				enemyManager.GetComponent<enemyManager>().stepEnemies();
 				if (transform.rotation.eulerAngles.y > 315 || transform.rotation.eulerAngles.y < 46) {
 					setEndMarker("up");
 				}
@@ -103,8 +106,7 @@ public class thirdPersonMovement : MonoBehaviour {
 				canInput = false;
 				startTime = Time.time;
 			}
-			if(Input.GetKeyDown(KeyCode.A)){
-				enemyManager.GetComponent<enemyManager>().stepEnemies();
+			if(Input.GetKeyDown(KeyCode.A)) {
 				if (transform.rotation.eulerAngles.y > 315 || transform.rotation.eulerAngles.y < 46) {
 					setEndMarker("left");
 				}
@@ -120,8 +122,7 @@ public class thirdPersonMovement : MonoBehaviour {
 				canInput = false;
 				startTime = Time.time;
 			}
-			if(Input.GetKeyDown(KeyCode.S)){
-				enemyManager.GetComponent<enemyManager>().stepEnemies();
+			if(Input.GetKeyDown(KeyCode.S)) {
 				if (transform.rotation.eulerAngles.y > 315 || transform.rotation.eulerAngles.y < 46) {
 					setEndMarker("down");
 				}
@@ -137,8 +138,7 @@ public class thirdPersonMovement : MonoBehaviour {
 				canInput = false;
 				startTime = Time.time;
 			}
-			if(Input.GetKeyDown(KeyCode.D)){
-				enemyManager.GetComponent<enemyManager>().stepEnemies();
+			if(Input.GetKeyDown(KeyCode.D)) {
 				if (transform.rotation.eulerAngles.y > 315 || transform.rotation.eulerAngles.y < 46) {
 					setEndMarker("right");
 				}
@@ -160,8 +160,14 @@ public class thirdPersonMovement : MonoBehaviour {
 			fracJourney = distCovered / 4;
 			transform.position = Vector3.Lerp(startMarker.position, endMarker.position, fracJourney);
 			if (fracJourney > 0.1) {
-				canInput = true;
 				currentMarker = endMarker;
+				if (bumpedIntoWall == false) {
+					enemyManager.GetComponent<enemyManager>().stepEnemies();
+				}
+				else {
+					bumpedIntoWall = false;
+				}
+				canInput = true;
 			}
 		}
 	}
