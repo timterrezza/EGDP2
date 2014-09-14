@@ -49,6 +49,7 @@
      <Compile Include="Assets\Map3.cs" />
      <Compile Include="Assets\Resources\Scripts\DogMove.cs" />
      <Compile Include="Assets\Resources\Scripts\GUIManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\KingMe.cs" />
      <Compile Include="Assets\Resources\Scripts\PawnMove.cs" />
      <Compile Include="Assets\Resources\Scripts\enemyManager.cs" />
      <Compile Include="Assets\Resources\Scripts\inital.cs" />
@@ -63,7 +64,7 @@
      <None Include="Assets\Resources\Scripts\MAP4.txt" />
      <None Include="Assets\Resources\Scripts\MAP.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Tim/Documents/EGDP2/Game/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Dustin/Documents/EGDP2/Game/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

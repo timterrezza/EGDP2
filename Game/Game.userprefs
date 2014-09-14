@@ -1,9 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\thirdPersonMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\KingMe.cs">
     <Files>
-      <File FileName="Assets\Resources\Scripts\thirdPersonMovement.cs" Line="40" Column="26" />
+      <File FileName="Assets\Resources\Scripts\PawnMove.cs" Line="48" Column="2" />
+      <File FileName="Assets\Resources\Scripts\DogMove.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\enemyManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\KingMe.cs" Line="17" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
