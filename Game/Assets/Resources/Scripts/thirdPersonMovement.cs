@@ -25,6 +25,8 @@ public class thirdPersonMovement : MonoBehaviour {
 
 	List<string> inputString;
 
+	GameObject enemyManager;
+
 	void Start() {
 
 		canInput = true;
@@ -42,6 +44,8 @@ public class thirdPersonMovement : MonoBehaviour {
 		startMarker = transform;
 		endMarker = initialTarget.transform;
 		currentMarker = initialTarget.transform;
+
+		enemyManager = GameObject.Find("Enemy Manager");
 	}
 
 	void setEndMarker(string input) {
@@ -76,22 +80,71 @@ public class thirdPersonMovement : MonoBehaviour {
 	void Update() {
 		if (canInput) {
 			if(Input.GetKeyDown(KeyCode.W)){
-				setEndMarker("up");
+				enemyManager.GetComponent<enemyManager>().stepEnemies();
+				if (transform.rotation.eulerAngles.y > 315 || transform.rotation.eulerAngles.y < 46) {
+					setEndMarker("up");
+				}
+				else if (transform.rotation.eulerAngles.y > 45 && transform.rotation.eulerAngles.y < 136) {
+					setEndMarker("right");
+				}
+				else if (transform.rotation.eulerAngles.y > 135 && transform.rotation.eulerAngles.y < 226) {
+					setEndMarker("down");
+				}
+				else {
+					setEndMarker("left");
+				}
+
 				canInput = false;
 				startTime = Time.time;
 			}
 			if(Input.GetKeyDown(KeyCode.A)){
-				setEndMarker("left");
+				enemyManager.GetComponent<enemyManager>().stepEnemies();
+				if (transform.rotation.eulerAngles.y > 315 || transform.rotation.eulerAngles.y < 46) {
+					setEndMarker("left");
+				}
+				else if (transform.rotation.eulerAngles.y > 45 && transform.rotation.eulerAngles.y < 136) {
+					setEndMarker("up");
+				}
+				else if (transform.rotation.eulerAngles.y > 135 && transform.rotation.eulerAngles.y < 226) {
+					setEndMarker("right");
+				}
+				else {
+					setEndMarker("down");
+				}
 				canInput = false;
 				startTime = Time.time;
 			}
 			if(Input.GetKeyDown(KeyCode.S)){
-				setEndMarker("down");
+				enemyManager.GetComponent<enemyManager>().stepEnemies();
+				if (transform.rotation.eulerAngles.y > 315 || transform.rotation.eulerAngles.y < 46) {
+					setEndMarker("down");
+				}
+				else if (transform.rotation.eulerAngles.y > 45 && transform.rotation.eulerAngles.y < 136) {
+					setEndMarker("left");
+				}
+				else if (transform.rotation.eulerAngles.y > 135 && transform.rotation.eulerAngles.y < 226) {
+					setEndMarker("up");
+				}
+				else {
+					setEndMarker("right");
+				}
 				canInput = false;
 				startTime = Time.time;
 			}
 			if(Input.GetKeyDown(KeyCode.D)){
-				setEndMarker("right");
+				enemyManager.GetComponent<enemyManager>().stepEnemies();
+				if (transform.rotation.eulerAngles.y > 315 || transform.rotation.eulerAngles.y < 46) {
+					setEndMarker("right");
+				}
+				else if (transform.rotation.eulerAngles.y > 45 && transform.rotation.eulerAngles.y < 136) {
+					setEndMarker("down");
+				}
+				else if (transform.rotation.eulerAngles.y > 135 && transform.rotation.eulerAngles.y < 226) {
+					setEndMarker("left");
+				}
+				else {
+					setEndMarker("up");
+				}
 				canInput = false;
 				startTime = Time.time;
 			}
