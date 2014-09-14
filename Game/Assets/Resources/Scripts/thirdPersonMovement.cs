@@ -27,6 +27,12 @@ public class thirdPersonMovement : MonoBehaviour {
 
 	GameObject enemyManager;
 
+	void OnTriggerEnter(Collider c) {
+		if (c.gameObject.tag == "wall") {
+			endMarker = currentMarker;
+		}
+	}
+
 	void Start() {
 
 		canInput = true;
