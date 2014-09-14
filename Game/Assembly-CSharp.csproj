@@ -49,6 +49,7 @@
      <Compile Include="Assets\Map3.cs" />
      <Compile Include="Assets\Resources\Scripts\DogMove.cs" />
      <Compile Include="Assets\Resources\Scripts\GUIManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\KingMe.cs" />
      <Compile Include="Assets\Resources\Scripts\PawnMove.cs" />
      <Compile Include="Assets\Resources\Scripts\enemyManager.cs" />
      <Compile Include="Assets\Resources\Scripts\inital.cs" />
