@@ -47,9 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Resources\Scripts\ConstructBoundary.js" />
+     <Compile Include="Assets\Resources\Scripts\NewGameScript.js" />
      <None Include="Assets\Resources\Scripts\Beginner.txt" />
      <None Include="Assets\Resources\Scripts\MAP2.txt" />
      <None Include="Assets\Resources\Scripts\MAP5.txt" />
+     <None Include="Assets\Resources\Scripts\INTERMEDIATE.txt" />
      <None Include="Assets\Resources\Scripts\MAP3.txt" />
      <None Include="Assets\Resources\Scripts\MAP4.txt" />
      <None Include="Assets\Resources\Scripts\MAP.txt" />
