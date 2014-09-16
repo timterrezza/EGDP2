@@ -26,7 +26,7 @@ function Awake () {
                 Instantiate (wallPrefab, new Vector3(j*4, y, i*4), Quaternion.identity);
             }
             if (map[j][i] == "K") {
-                Instantiate (King, new Vector3(j*4, 2.346979, i*4), Quaternion.identity);
+                Instantiate (King, new Vector3(j*4, 0.5144312, i*4), Quaternion.identity);
             }            
             if (map[j][i] == "P") {
                 Instantiate (Player, new Vector3(j*4, 2, i*4), Quaternion.identity);

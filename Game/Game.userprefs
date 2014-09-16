@@ -1,10 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\tileRotation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\Level1R.txt">
     <Files>
-      <File FileName="Assets\Resources\Scripts\GUIManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\KingMe.cs" Line="1" Column="19" />
-      <File FileName="Assets\Resources\Scripts\tileRotation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\Level1R.txt" Line="2" Column="6" />
+      <File FileName="Assets\Resources\Scripts\ConstructBoundary.js" Line="51" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
