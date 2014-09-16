@@ -47,13 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
-     <None Include="Assets\Resources\Scripts\Beginner.txt" />
-     <None Include="Assets\Resources\Scripts\MAP2.txt" />
+     <None Include="Assets\Resources\Scripts\Level2B.txt" />
+     <None Include="Assets\Resources\Scripts\Level1R.txt" />
      <None Include="Assets\Resources\Scripts\MAP5.txt" />
      <None Include="Assets\Resources\Scripts\INTERMEDIATE.txt" />
-     <None Include="Assets\Resources\Scripts\MAP3.txt" />
      <None Include="Assets\Resources\Scripts\MAP4.txt" />
-     <None Include="Assets\Resources\Scripts\MAP.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
