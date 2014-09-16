@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
@@ -216,6 +217,8 @@
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
 =======
 >>>>>>> 69961524be3d39d0aed4f14599f75720244c04d4
+=======
+>>>>>>> 44c290f6ff35af2d0c8af1cd4582f5a3f5df5949
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
@@ -266,13 +269,11 @@
   <ItemGroup>
      <Compile Include="Assets\Resources\Scripts\ConstructBoundary.js" />
      <Compile Include="Assets\Resources\Scripts\NewGameScript.js" />
-     <None Include="Assets\Resources\Scripts\Beginner.txt" />
-     <None Include="Assets\Resources\Scripts\MAP2.txt" />
+     <None Include="Assets\Resources\Scripts\Level2B.txt" />
+     <None Include="Assets\Resources\Scripts\Level1R.txt" />
      <None Include="Assets\Resources\Scripts\MAP5.txt" />
      <None Include="Assets\Resources\Scripts\INTERMEDIATE.txt" />
-     <None Include="Assets\Resources\Scripts\MAP3.txt" />
      <None Include="Assets\Resources\Scripts\MAP4.txt" />
-     <None Include="Assets\Resources\Scripts\MAP.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
@@ -291,5 +292,8 @@
   -->
   
 </Project>
+<<<<<<< HEAD
 >>>>>>> 1980b39ec78099f489e78ce12fa13bfe6c125793
 >>>>>>> 0a3507dcf4d08714c73895a2371c7734991a0bca
+=======
+>>>>>>> 44c290f6ff35af2d0c8af1cd4582f5a3f5df5949
