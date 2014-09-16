@@ -1,19 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\LevelManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\thirdPersonMovement.cs">
     <Files>
-      <File FileName="Assets\Resources\Scripts\LevelManager.cs" Line="18" Column="33" />
-      <File FileName="Assets\Resources\Scripts\titleScreenLoad.cs" Line="1" Column="1" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\KingMe.cs">
-    <Files>
-      <File FileName="Assets\Resources\Scripts\playerTileInteraction.cs" Line="24" Column="114" />
-      <File FileName="Assets\Resources\Scripts\MAP5.txt" Line="4" Column="3" />
-      <File FileName="Assets\Resources\Scripts\ConstructBoundary.js" Line="15" Column="2" />
-      <File FileName="Assets\Resources\Scripts\INTERMEDIATE.txt" Line="1" Column="15" />
-      <File FileName="Assets\Resources\Scripts\KingMe.cs" Line="17" Column="48" />
->>>>>>> 72bdbaf711fdb57eabb3a8424127c39057326313
+      <File FileName="Assets\Resources\Scripts\tileRotation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\playerTileInteraction.cs" Line="13" Column="2" />
+      <File FileName="Assets\Resources\Scripts\thirdPersonMovement.cs" Line="54" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
