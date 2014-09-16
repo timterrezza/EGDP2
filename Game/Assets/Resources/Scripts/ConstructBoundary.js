@@ -10,6 +10,9 @@ var white = true;
 //tile y value = -6.239934
 
 function Awake () {
+	if(Input.GetKey("escape"))	{
+		Application.Quit();
+	}
     var map = mapAsset.text.Split ("\n"[0]);
     var x = 0.0;
     var y = 5.5;
