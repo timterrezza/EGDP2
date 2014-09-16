@@ -4,30 +4,17 @@ using System.Collections;
 public class GUIManager : MonoBehaviour {
 
 	float startTime;
-	public float textWidth;
-	public float textHeight;
-	public float textLeft;
-	public float textTop;
-	public float pictureWidth;
-	public float pictureHeight;
-	public float pictureLeft;
-	public float pictureTop;
 	public string textInfo;
 	Texture talkingPerson;
+
+	GUISkin skin;
 
 	// Use this for initialization
 	void Start () {
 		startTime = Time.time;
-		textWidth = 380;
-		textHeight = 250;
-		textLeft = 70;
-		textTop = 10;
-		pictureWidth = 50;
-		pictureHeight = 50;
-		pictureLeft = 10;
-		pictureTop = 10;
 		textInfo = "story elements go here";
 		talkingPerson = (Texture)Resources.Load("Materials/testRed");
+		skin = (GUISkin)Resources.Load ("GUI/Beginning");
 	}
 	
 	// Update is called once per frame
@@ -36,9 +23,12 @@ public class GUIManager : MonoBehaviour {
 	}
 
 	void OnGUI() {
+		skin.box.fontSize = Screen.height / 15;
+		skin.box.contentOffset = new Vector2(0,Screen.height / 50);
+		GUI.skin = skin;
 		if (Time.time - startTime < 10) {
-			GUI.Label(new Rect(pictureLeft,pictureTop,pictureWidth,pictureHeight), talkingPerson);
-			GUI.Box(new Rect(textLeft,textTop,textWidth,textHeight), textInfo);
+			GUI.Label(new Rect(Screen.height / 30,Screen.height / 30,Screen.height / 15,Screen.height / 15), talkingPerson);
+			GUI.Box(new Rect(Screen.height / 7,Screen.height / 30,Screen.width - Screen.width / 8,Screen.height - Screen.height / 20), textInfo);
 		}
 	}
 }
