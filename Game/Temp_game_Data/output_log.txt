@@ -1,0 +1,32 @@
+Initialize engine version: 4.3.0f4 (e01000627d60)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics Family (ID=0x126)
+    Vendor:   Intel
+    VRAM:     64 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.070 seconds
+desktop: 1600x900 50Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Level 'Resources/Scenes/Dusty' (-1) couldn't be loaded because it has not been added to the build settings.
+To add a level to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 292)
+
+PLAYER HIT KING
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
