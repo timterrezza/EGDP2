@@ -12,11 +12,10 @@ public class KingMe : MonoBehaviour {
 	void Update () {
 		
 	}
-	void OnCollisionEnter(Collision collision) {
-		Debug.Log("hit me");
+	void OnTriggerEnter(Collider collision) {
 		if(collision.gameObject.name == "player"){
 			Application.LoadLevel("Resources/Scenes/Karl_Scene");
-
+			Debug.Log ("PLAYER HIT KING");
 		}
 	}
 }
