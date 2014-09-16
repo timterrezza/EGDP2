@@ -1,30 +1,11 @@
 ﻿<Properties>
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\MAP5.txt">
-=======
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/NewGameScript.js">
-    <Files>
-      <File FileName="Assets/Resources/Scripts/NewGameScript.js" Line="9" Column="2" />
-=======
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\GUIManager.cs">
->>>>>>> 0f4c766d78a6dd2b16a364123a8a437bf657b29f
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\KingMe.cs">
     <Files>
       <File FileName="Assets\Resources\Scripts\playerTileInteraction.cs" Line="27" Column="1" />
       <File FileName="Assets\Resources\Scripts\MAP5.txt" Line="4" Column="3" />
-<<<<<<< HEAD
-      <File FileName="Assets\Resources\Scripts\KingMe.cs" Line="18" Column="34" />
+      <File FileName="Assets\Resources\Scripts\KingMe.cs" Line="19" Column="2" />
       <File FileName="Assets\Resources\Scripts\ConstructBoundary.js" Line="20" Column="37" />
-=======
-      <File FileName="Assets\Resources\Scripts\KingMe.cs" Line="21" Column="3" />
-=======
-      <File FileName="Assets\Resources\Scripts\GUIManager.cs" Line="27" Column="62" />
->>>>>>> 442d9e04ff18369c2de171364f0fe715bfa8a3c0
->>>>>>> 4195e299405388767d056979a4058f7e15ce048b
->>>>>>> 0f4c766d78a6dd2b16a364123a8a437bf657b29f
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

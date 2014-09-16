@@ -14,7 +14,7 @@ public class KingMe : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider collision) {
 		if(collision.gameObject.name == "player"){
-			Application.LoadLevel("Resources/Scenes/Dusty");
+			//Application.LoadLevel("Resources/Scenes/Dusty");
 			Debug.Log ("PLAYER HIT KING");
 		}
 	}
