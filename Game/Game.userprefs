@@ -1,23 +1,45 @@
 ﻿<Properties>
 <<<<<<< HEAD
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\KingMe.cs">
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\MAP5.txt">
+=======
+<<<<<<< HEAD
+>>>>>>> 1980b39ec78099f489e78ce12fa13bfe6c125793
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/NewGameScript.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\NewGameScript.js">
     <Files>
+<<<<<<< HEAD
+      <File FileName="Assets\Resources\Scripts\titleScreenKnight.cs" Line="13" Column="44" />
+      <File FileName="Assets\Resources\Scripts\NewGameScript.js" Line="9" Column="2" />
+=======
       <File FileName="Assets/Resources/Scripts/NewGameScript.js" Line="9" Column="2" />
 =======
   <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\GUIManager.cs">
+>>>>>>> 0f4c766d78a6dd2b16a364123a8a437bf657b29f
+>>>>>>> 69961524be3d39d0aed4f14599f75720244c04d4
     <Files>
-<<<<<<< HEAD
-      <File FileName="Assets\Resources\Scripts\ConstructBoundary.js" Line="23" Column="14" />
-      <File FileName="Assets\Resources\Scripts\playerTileInteraction.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\ConstructBoundary.js" Line="16" Column="17" />
+      <File FileName="Assets\Resources\Scripts\playerTileInteraction.cs" Line="27" Column="1" />
       <File FileName="Assets\Resources\Scripts\MAP5.txt" Line="4" Column="3" />
+      <File FileName="Assets\Resources\Scripts\KingMe.cs" Line="19" Column="2" />
+      <File FileName="Assets\Resources\Scripts\ConstructBoundary.js" Line="20" Column="37" />
+<<<<<<< HEAD
+=======
+=======
       <File FileName="Assets\Resources\Scripts\KingMe.cs" Line="21" Column="3" />
 =======
       <File FileName="Assets\Resources\Scripts\GUIManager.cs" Line="27" Column="62" />
 >>>>>>> 442d9e04ff18369c2de171364f0fe715bfa8a3c0
 >>>>>>> 4195e299405388767d056979a4058f7e15ce048b
+>>>>>>> 0f4c766d78a6dd2b16a364123a8a437bf657b29f
+>>>>>>> 1980b39ec78099f489e78ce12fa13bfe6c125793
+>>>>>>> 69961524be3d39d0aed4f14599f75720244c04d4
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
