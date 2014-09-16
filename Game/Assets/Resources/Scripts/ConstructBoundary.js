@@ -2,6 +2,7 @@ var mapAsset : TextAsset;
 var wallPrefab : Transform;
 var blackTile : Transform;
 var whiteTile : Transform;
+var King : Transform;
 
 //map.length = 8
 
@@ -20,7 +21,11 @@ function Awake () {
             if (map[j][i] == "X") {
                 Instantiate (wallPrefab, new Vector3(j*4, y, i*4), Quaternion.identity);
             }
+            if (map[j][i] == "K") {
+                Instantiate (King, new Vector3(j*4, 2.346979, i*4), Quaternion.identity);
+            }            
             
+
             if(white == true)	{
             	Instantiate (whiteTile, new Vector3(j*4, 0, i*4), Quaternion.identity);
             	white = false;
