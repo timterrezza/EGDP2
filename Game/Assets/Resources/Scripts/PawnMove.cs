@@ -20,6 +20,18 @@ public class PawnMove : MonoBehaviour {
 		extra = runs;
 		target = new Vector3(transform.position.x,transform.position.y,transform.position.z);
 		qr = transform.rotation;
+		if(Turnp[0] == 0){
+			qr = Quaternion.Euler(new Vector3(0,0,0));
+		}
+		if(Turnp[0] == 1){
+			qr = Quaternion.Euler(new Vector3(0,90,0));
+		}
+		if(Turnp[0] == 2){
+			qr = Quaternion.Euler(new Vector3(0,180,0));
+		}
+		if(Turnp[0] == 3){
+			qr = Quaternion.Euler(new Vector3(0,270,0));
+		}
 	}
 	
 	// Update is called once per frame
