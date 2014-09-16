@@ -16,8 +16,12 @@ Platform assembly: C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Manage
 Loading C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.145 seconds
+- Completed reload, in  0.074 seconds
 desktop: 1600x900 50Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\karlolsen\Desktop\JUSTICE\Game\Temp_game_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+PLAYER HIT KING
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
