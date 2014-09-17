@@ -24,8 +24,8 @@ public class GUIManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		redStyle.fontSize = Screen.height / 25;
-		blueStyle.fontSize = Screen.height / 25;
+		redStyle.fontSize = Screen.height / 50;
+		blueStyle.fontSize = Screen.height / 50;
 
 		if (Application.loadedLevel == 1 && GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().one == false) story = true;
 		if (Application.loadedLevel == 2 && GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().two == false) story = true;

@@ -16,7 +16,14 @@ Platform assembly: C:\Users\Peregrin\Documents\EGDP2\Game\Class_Demo_Data\Manage
 Loading C:\Users\Peregrin\Documents\EGDP2\Game\Class_Demo_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Peregrin\Documents\EGDP2\Game\Class_Demo_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\Peregrin\Documents\EGDP2\Game\Class_Demo_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.060 seconds
+- Completed reload, in  0.071 seconds
 desktop: 1600x900 50Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+UnloadTime: 0.654287 ms
+Platform assembly: C:\Users\Peregrin\Documents\EGDP2\Game\Class_Demo_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 5053.
+Total: 1.760966 ms (FindLiveObjects: 0.286053 ms CreateObjectMapping: 0.027261 ms MarkObjects: 0.607665 ms  DeleteObjects: 0.090083 ms)
+
