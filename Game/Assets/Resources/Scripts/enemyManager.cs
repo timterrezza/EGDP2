@@ -5,6 +5,10 @@ public class enemyManager : MonoBehaviour {
 	public GameObject[] enemies;
 	public GameObject[] Baddies;
 	public GameObject[] Pawnies;
+
+	public Texture blackTexture;
+	public Texture whiteTexture;
+
 	public int dogm;
 
 	public float derp;
@@ -17,6 +21,11 @@ public class enemyManager : MonoBehaviour {
 		enemies = GameObject.FindGameObjectsWithTag("enemy");
 		Baddies = GameObject.FindGameObjectsWithTag("Dog");
 		Pawnies = GameObject.FindGameObjectsWithTag("Pawn");
+		if (Application.loadedLevel%2 == 1)
+		{
+			for (int i = 0; i < Pawnies.Length; i++) Pawnies[i].renderer.material.mainTexture = blackTexture;
+		}
+		else for (int i = 0; i < Pawnies.Length; i++) Pawnies[i].renderer.material.mainTexture = whiteTexture;
 	}
 
 	public void stepEnemies () {

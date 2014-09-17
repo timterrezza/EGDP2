@@ -5,7 +5,6 @@ public class KingMe : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -13,9 +12,8 @@ public class KingMe : MonoBehaviour {
 		
 	}
 	void OnTriggerEnter(Collider collision) {
-		if(collision.gameObject.name == "player"){
-			Application.LoadLevel("Katie_title_screen");
-			Debug.Log ("PLAYER HIT KING");
+		if(collision.gameObject.tag == "player"){
+			Application.LoadLevel(Application.loadedLevel + 1);
 		}
 	}
 }
