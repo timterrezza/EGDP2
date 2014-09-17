@@ -38,24 +38,32 @@ public class GUIManager : MonoBehaviour {
 		}
 		if (Application.loadedLevel == 2)
 		{
-			textInfo.Add ("asdf");
-			textInfo.Add ("ghjjkl");
+			textInfo.Add ("What the hell was that about?");
+			textInfo.Add ("You killed one of us, we killed one of you.");
+			textInfo.Add ("But ours was a contract; yours was just petty revenge.");
+			textInfo.Add ("Well, maybe next time you’ll think about killing one of us.");
+			textInfo.Add ("You can’t be serious.  We’re supposed to be professionals, damn it.");
 
 			pi = false;
 			ki = true;
 		}
 		if (Application.loadedLevel == 3)
 		{
-			textInfo.Add ("asdf");
-			textInfo.Add ("ghjjkl");
+			textInfo.Add ("You’re going to pay for what you’ve done.");
+			textInfo.Add ("And then you’ll pay, and then, we’ll pay, I get it.");
+			textInfo.Add ("Shut up- this is serious business.");
+			textInfo.Add ("Listen to yourself.  Just the same as the last guy and the next guy.");
 
 			pi = true;
 			ki = false;
 		}
 		if (Application.loadedLevel == 4)
 		{
-			textInfo.Add ("asdf");
-			textInfo.Add ("ghjjkl");
+			textInfo.Add ("You already know why I’m here.");
+			textInfo.Add ("We could stop this, here and now.");
+			textInfo.Add ("How?  Who’s going to tell the bosses to go to hell?");
+			textInfo.Add ("I guess you have a point.");
+			textInfo.Add ("When you find someone neutral, let me know.");
 
 			pi = false;
 			ki = true;

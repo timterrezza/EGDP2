@@ -68,7 +68,7 @@ public class fader : MonoBehaviour {
 			// If the screen is almost black...
 			if(guiTexture.color.a >= 0.95f)
 				// ... reload the level.
-			Application.LoadLevel("Katie_title_screen");
+			Application.LoadLevel(Application.loadedLevel);
 		}
 	
 }
