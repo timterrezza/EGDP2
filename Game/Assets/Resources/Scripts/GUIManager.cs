@@ -14,11 +14,18 @@ public class GUIManager : MonoBehaviour {
 
 	bool pi = false;
 	bool ki = false;
+	bool story = false;
 
 	GUISkin skin;
 
 	// Use this for initialization
 	void Start () {
+
+		if (Application.loadedLevel == 1 && GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().one == false) story = true;
+		if (Application.loadedLevel == 2 && GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().two == false) story = true;
+		if (Application.loadedLevel == 3 && GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().three == false) story = true;
+		if (Application.loadedLevel == 4 && GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().four == false) story = true;
+
 		startTime = Time.time;
 		skin = (GUISkin)Resources.Load ("GUI/Beginning");
 		if (Application.loadedLevel == 1)
@@ -80,7 +87,8 @@ public class GUIManager : MonoBehaviour {
 		skin.box.contentOffset = new Vector2(0,Screen.height / 50);
 		GUI.skin = skin;
 
-		if (Time.time - startTime < textInfo.Count * 3) {
+
+		if (Time.time - startTime < textInfo.Count * 3 && story == true) {
 			for (int i = 0; i < textInfo.Count; i++)
 			{
 				if (i%2 == 0 && pi == true) GUI.Label (new Rect(Screen.width * 7 / 10, Screen.height / textInfo.Count * i, Screen.width / 5, Screen.height / textInfo.Count * 2), PawnIcon);
@@ -96,6 +104,13 @@ public class GUIManager : MonoBehaviour {
 				else GUI.skin.box.alignment = TextAnchor.MiddleLeft;
 				GUI.Box (new Rect(Screen.width / 8, Screen.height / textInfo.Count * i, Screen.width * 2 / 3, Screen.height / textInfo.Count), textInfo[i]);
 			}
+		}
+		else
+		{
+			if (Application.loadedLevel == 1) GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().one = true;
+			if (Application.loadedLevel == 2) GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().two = true;
+			if (Application.loadedLevel == 3) GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().three = true;
+			if (Application.loadedLevel == 4) GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().four = true;
 		}
 	}
 }
