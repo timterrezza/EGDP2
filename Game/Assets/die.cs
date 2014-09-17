@@ -14,6 +14,7 @@ public class die : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider c) {
 		if (c.gameObject.tag == "Pawn") {
+			Application.LoadLevel (Application.loadedLevel);
 
 		}
 	}
