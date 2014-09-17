@@ -12,7 +12,7 @@ public class KingMe : MonoBehaviour {
 		
 	}
 	void OnTriggerEnter(Collider collision) {
-		if(collision.gameObject.name == "player"){
+		if(collision.gameObject.tag == "player"){
 			Application.LoadLevel("Katie_title_screen");
 			Debug.Log ("PLAYER HIT KING");
 		}
