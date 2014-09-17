@@ -1,17 +1,10 @@
 ﻿<Properties>
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/INTERMEDIATE_2.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/Level1B.txt">
     <Files>
       <File FileName="Assets/Resources/Scripts/NewGameScript.js" Line="1" Column="1" />
-      <File FileName="Assets/INTERMEDIATE_2.txt" Line="7" Column="18" />
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\Level1R.txt">
-    <Files>
-      <File FileName="Assets\Resources\Scripts\Level1R.txt" Line="2" Column="6" />
-      <File FileName="Assets\Resources\Scripts\ConstructBoundary.js" Line="51" Column="2" />
->>>>>>> 93ababf2dbaa1866a44f44673b160c3ab454b4e8
+      <File FileName="Assets/Resources/Scripts/Level2R.txt" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/Level1B.txt" Line="15" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
