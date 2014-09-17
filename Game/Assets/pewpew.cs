@@ -18,7 +18,7 @@ public class pewpew : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider c) {
 
-		if (c.gameObject.tag == "player" && this.GetComponent<PawnMove>().isturning == true) {
+		if (c.gameObject.tag == "player" && this.GetComponent<PawnMove>().isturning == false) {
 			//Debug.Log ("hi");
 			c.audio.clip = gun;
 			c.audio.Play();
