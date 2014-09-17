@@ -1,20 +1,41 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GUIManager : MonoBehaviour {
 
 	float startTime;
-	public string textInfo;
-	Texture talkingPerson;
+	public List<string> textInfo = new List<string> ();
+	public Texture talkingPerson;
 
 	GUISkin skin;
 
 	// Use this for initialization
 	void Start () {
 		startTime = Time.time;
-		textInfo = "story elements go here";
-		talkingPerson = (Texture)Resources.Load("Materials/testRed");
 		skin = (GUISkin)Resources.Load ("GUI/Beginning");
+		if (Application.loadedLevel == 1)
+		{
+			textInfo.Add ("asdf");
+			textInfo.Add ("ghjjkl");
+			textInfo.Add ("asdf");
+			textInfo.Add ("ghjjkl");
+		}
+		if (Application.loadedLevel == 2)
+		{
+			textInfo.Add ("asdf");
+			textInfo.Add ("ghjjkl");
+		}
+		if (Application.loadedLevel == 3)
+		{
+			textInfo.Add ("asdf");
+			textInfo.Add ("ghjjkl");
+		}
+		if (Application.loadedLevel == 4)
+		{
+			textInfo.Add ("asdf");
+			textInfo.Add ("ghjjkl");
+		}
 	}
 	
 	// Update is called once per frame
@@ -28,7 +49,10 @@ public class GUIManager : MonoBehaviour {
 		GUI.skin = skin;
 		if (Time.time - startTime < 10) {
 			GUI.Label(new Rect(Screen.height / 30,Screen.height / 30,Screen.height / 15,Screen.height / 15), talkingPerson);
-			GUI.Box(new Rect(Screen.height / 7,Screen.height / 30,Screen.width - Screen.width / 8,Screen.height - Screen.height / 20), textInfo);
+			for (int i = 0; i < textInfo.Count; i++)
+			{
+				GUI.Box (new Rect(Screen.width / 8, Screen.height / textInfo.Count * i, Screen.width * 2 / 3, Screen.height / textInfo.Count), textInfo[i]);
+			}
 		}
 	}
 }
