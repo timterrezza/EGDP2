@@ -4,14 +4,17 @@ using System.Collections.Generic;
 
 public class GUIManager : MonoBehaviour {
 
-	float startTime;
+	public GUIStyle redStyle;
+	public GUIStyle blueStyle;
+	public GUIStyle transparent;
+
 	public List<string> textInfo = new List<string> ();
+	public Texture2D altPawnIcon;
+	public Texture2D altKingIcon;
+	public Texture2D PawnIcon;
+	public Texture2D KingIcon;
 
-	public Texture altPawnIcon;
-	public Texture altKingIcon;
-	public Texture PawnIcon;
-	public Texture KingIcon;
-
+	float startTime;
 	bool pi = false;
 	bool ki = false;
 	bool story = false;
@@ -20,6 +23,9 @@ public class GUIManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		redStyle.fontSize = Screen.height / 25;
+		blueStyle.fontSize = Screen.height / 25;
 
 		if (Application.loadedLevel == 1 && GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().one == false) story = true;
 		if (Application.loadedLevel == 2 && GameObject.FindGameObjectWithTag("narrative").GetComponent<NarrativeMonitor>().two == false) story = true;
@@ -75,6 +81,7 @@ public class GUIManager : MonoBehaviour {
 			pi = false;
 			ki = true;
 		}
+
 	}
 	
 	// Update is called once per frame
@@ -88,22 +95,27 @@ public class GUIManager : MonoBehaviour {
 		GUI.skin = skin;
 
 
-		if (Time.time - startTime < textInfo.Count * 3 && story == true) {
+		if (Time.time - startTime < textInfo.Count * 2 && story == true) {
 			for (int i = 0; i < textInfo.Count; i++)
 			{
-				if (i%2 == 0 && pi == true) GUI.Label (new Rect(Screen.width * 7 / 10, Screen.height / textInfo.Count * i, Screen.width / 5, Screen.height / textInfo.Count * 2), PawnIcon);
-				else if (i%2 == 0 && pi == false) GUI.Label (new Rect(Screen.width * 7 / 10, Screen.height / textInfo.Count * i, Screen.width / 8, Screen.height / textInfo.Count), altPawnIcon);
-
-				if (i%2 == 1 && ki == true) GUI.Label (new Rect(Screen.width / 10, Screen.height / textInfo.Count * i, Screen.width / 5, Screen.height / textInfo.Count), KingIcon);
-				else if (i%2 == 1 && ki == false) GUI.Label (new Rect(Screen.width / 10, Screen.height / textInfo.Count * i, Screen.width / 8, Screen.height / textInfo.Count), altKingIcon);
-
+				if (Time.time - startTime >= i*2)
+				{
+					if (i%2 == 0) GUI.Box (new Rect(Screen.width / 8, Screen.height / textInfo.Count * i, Screen.width * 2 / 3, Screen.height / textInfo.Count), textInfo[i], blueStyle);
+					else GUI.Box (new Rect(Screen.width / 8, Screen.height / textInfo.Count * i, Screen.width * 2 / 3, Screen.height / textInfo.Count), textInfo[i], redStyle);
+				}
 			}
 			for (int i = 0; i < textInfo.Count; i++)
 			{
-				if (GUI.skin.box.alignment == TextAnchor.MiddleLeft) GUI.skin.box.alignment = TextAnchor.MiddleRight;
-				else GUI.skin.box.alignment = TextAnchor.MiddleLeft;
-				GUI.Box (new Rect(Screen.width / 8, Screen.height / textInfo.Count * i, Screen.width * 2 / 3, Screen.height / textInfo.Count), textInfo[i]);
+				if (Time.time - startTime >= i*2)
+				{
+					if (i%2 == 0 && pi == true) GUI.Box (new Rect(Screen.width * 7.55f / 10, Screen.height / textInfo.Count * i, Screen.height / textInfo.Count, Screen.height / textInfo.Count), PawnIcon, transparent);
+					else if (i%2 == 0 && pi == false) GUI.Label (new Rect(Screen.width * 7 / 10, Screen.height / textInfo.Count * i, Screen.height / textInfo.Count, Screen.height / textInfo.Count), altPawnIcon, transparent);
+
+					if (i%2 == 1 && ki == true) GUI.Label (new Rect(Screen.width / 10, Screen.height / textInfo.Count * i, Screen.height / textInfo.Count, Screen.height / textInfo.Count), KingIcon, transparent);
+					else if (i%2 == 1 && ki == false) GUI.Label (new Rect(Screen.width / 10, Screen.height / textInfo.Count * i, Screen.height / textInfo.Count, Screen.height / textInfo.Count), altKingIcon, transparent);
+				}
 			}
+
 		}
 		else
 		{

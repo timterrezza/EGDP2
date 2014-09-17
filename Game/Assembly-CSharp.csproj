@@ -53,6 +53,7 @@
      <Compile Include="Assets\Resources\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Resources\Scripts\NarrativeMonitor.cs" />
      <Compile Include="Assets\Resources\Scripts\PawnMove.cs" />
+     <Compile Include="Assets\Resources\Scripts\TextureScale.cs" />
      <Compile Include="Assets\Resources\Scripts\enemyManager.cs" />
      <Compile Include="Assets\Resources\Scripts\inital.cs" />
      <Compile Include="Assets\Resources\Scripts\playerTileInteraction.cs" />
