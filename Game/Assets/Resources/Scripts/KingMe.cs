@@ -13,6 +13,7 @@ public class KingMe : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider collision) {
 		if(collision.gameObject.tag == "player"){
+			if (Application.loadedLevel == 4) Application.LoadLevel("Katie_title_screen");
 			Application.LoadLevel(Application.loadedLevel + 1);
 		}
 	}
