@@ -15,11 +15,16 @@ public class PawnMove : MonoBehaviour {
 	public int runs;
 	private Quaternion qr;
 	public bool ismoving = false;
+	public bool isturning = false;
 	// Use this for initialization
 	void Start () {
 		extra = runs;
 		target = new Vector3(transform.position.x,transform.position.y,transform.position.z);
 		qr = transform.rotation;
+		if(transform.rotation == Quaternion.Euler(new Vector3(0,0,0)) || transform.rotation == Quaternion.Euler(new Vector3(0,90,0)) || transform.rotation == Quaternion.Euler(new Vector3(0,180,0)) || transform.rotation == Quaternion.Euler(new Vector3(0,270,0))){
+			isturning = false;
+		}else
+			isturning = true;
 		if(Turnp[0] == 0){
 			qr = Quaternion.Euler(new Vector3(0,0,0));
 		}
@@ -46,9 +51,9 @@ public class PawnMove : MonoBehaviour {
 		if(transform.position == target){
 			ismoving = false;
 		}
-
+		
 		if(test.x == 0 && test.z == 0){
-
+			
 			if(Turnp[curr] == 0){
 				qr = Quaternion.Euler(new Vector3(0,0,0));
 			}
@@ -61,15 +66,15 @@ public class PawnMove : MonoBehaviour {
 			if(Turnp[curr] == 3){
 				qr = Quaternion.Euler(new Vector3(0,270,0));
 			}
-
-
+			
+			
 			curr++;
 			//transform.rotation = Quaternion.Lerp(transform.rotation, newrot, Time.time * speed);
 			if(curr >= point.GetLength(0)){
 				curr = 0;
 			}
 		}
-
+		
 		
 	}
 	public void Calc(){
