@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\GUIManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\Level1R.txt">
     <Files>
-      <File FileName="Assets\Resources\Scripts\GUIManager.cs" Line="105" Column="4" />
-      <File FileName="Assets\Resources\Scripts\TextureScale.cs" Line="149" Column="2" />
+      <File FileName="Assets\Resources\Scripts\Level1R.txt" Line="4" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
